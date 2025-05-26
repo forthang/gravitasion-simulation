@@ -1,0 +1,3 @@
+/home/forthang/work/gravity_sim-main/build/CMakeFiles/gravity_sim.dir
+/home/forthang/work/gravity_sim-main/build/CMakeFiles/edit_cache.dir
+/home/forthang/work/gravity_sim-main/build/CMakeFiles/rebuild_cache.dir
