@@ -74,7 +74,7 @@ void Grid::updateAndWarp(const std::vector<Object>& objects) {
         float totalDisplacementY = 0.0f;
 
         for (const auto& obj : objects) {
-            if (obj.mass <= 0 || obj.radius <=0) continue; // Skip non-physical objects
+            if (obj.mass <= 0 || obj.radius <=0) continue; // Игнор сетки
 
             glm::vec3 toObject = obj.position - vertexBasePos;
             glm::vec3 toObjectXZ = glm::vec3(toObject.x, 0.0f, toObject.z); // Projection onto XZ plane
