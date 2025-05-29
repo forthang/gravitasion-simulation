@@ -31,9 +31,6 @@ default_target: all
 
 .SUFFIXES: .hpux_make_needs_suffix_list
 
-# Produce verbose output by default.
-VERBOSE = 1
-
 # Command-line flag to silence nested $(MAKE).
 $(VERBOSE)MAKESILENT = -s
 
@@ -132,29 +129,173 @@ gravity_sim/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/build
 .PHONY : gravity_sim/fast
 
-gravity_sim.o: gravity_sim.cpp.o
-.PHONY : gravity_sim.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-gravity_sim.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/gravity_sim.cpp.o
-.PHONY : gravity_sim.cpp.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-gravity_sim.i: gravity_sim.cpp.i
-.PHONY : gravity_sim.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-gravity_sim.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/gravity_sim.cpp.i
-.PHONY : gravity_sim.cpp.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-gravity_sim.s: gravity_sim.cpp.s
-.PHONY : gravity_sim.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-gravity_sim.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/gravity_sim.cpp.s
-.PHONY : gravity_sim.cpp.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+src/Camera.o: src/Camera.cpp.o
+.PHONY : src/Camera.o
+
+# target to build an object file
+src/Camera.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/Camera.cpp.o
+.PHONY : src/Camera.cpp.o
+
+src/Camera.i: src/Camera.cpp.i
+.PHONY : src/Camera.i
+
+# target to preprocess a source file
+src/Camera.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/Camera.cpp.i
+.PHONY : src/Camera.cpp.i
+
+src/Camera.s: src/Camera.cpp.s
+.PHONY : src/Camera.s
+
+# target to generate assembly for a file
+src/Camera.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/Camera.cpp.s
+.PHONY : src/Camera.cpp.s
+
+src/GravitySimulation.o: src/GravitySimulation.cpp.o
+.PHONY : src/GravitySimulation.o
+
+# target to build an object file
+src/GravitySimulation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/GravitySimulation.cpp.o
+.PHONY : src/GravitySimulation.cpp.o
+
+src/GravitySimulation.i: src/GravitySimulation.cpp.i
+.PHONY : src/GravitySimulation.i
+
+# target to preprocess a source file
+src/GravitySimulation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/GravitySimulation.cpp.i
+.PHONY : src/GravitySimulation.cpp.i
+
+src/GravitySimulation.s: src/GravitySimulation.cpp.s
+.PHONY : src/GravitySimulation.s
+
+# target to generate assembly for a file
+src/GravitySimulation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/GravitySimulation.cpp.s
+.PHONY : src/GravitySimulation.cpp.s
+
+src/Grid.o: src/Grid.cpp.o
+.PHONY : src/Grid.o
+
+# target to build an object file
+src/Grid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/Grid.cpp.o
+.PHONY : src/Grid.cpp.o
+
+src/Grid.i: src/Grid.cpp.i
+.PHONY : src/Grid.i
+
+# target to preprocess a source file
+src/Grid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/Grid.cpp.i
+.PHONY : src/Grid.cpp.i
+
+src/Grid.s: src/Grid.cpp.s
+.PHONY : src/Grid.s
+
+# target to generate assembly for a file
+src/Grid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/Grid.cpp.s
+.PHONY : src/Grid.cpp.s
+
+src/Object.o: src/Object.cpp.o
+.PHONY : src/Object.o
+
+# target to build an object file
+src/Object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/Object.cpp.o
+.PHONY : src/Object.cpp.o
+
+src/Object.i: src/Object.cpp.i
+.PHONY : src/Object.i
+
+# target to preprocess a source file
+src/Object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/Object.cpp.i
+.PHONY : src/Object.cpp.i
+
+src/Object.s: src/Object.cpp.s
+.PHONY : src/Object.s
+
+# target to generate assembly for a file
+src/Object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/Object.cpp.s
+.PHONY : src/Object.cpp.s
+
+src/Shader.o: src/Shader.cpp.o
+.PHONY : src/Shader.o
+
+# target to build an object file
+src/Shader.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/Shader.cpp.o
+.PHONY : src/Shader.cpp.o
+
+src/Shader.i: src/Shader.cpp.i
+.PHONY : src/Shader.i
+
+# target to preprocess a source file
+src/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/Shader.cpp.i
+.PHONY : src/Shader.cpp.i
+
+src/Shader.s: src/Shader.cpp.s
+.PHONY : src/Shader.s
+
+# target to generate assembly for a file
+src/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/Shader.cpp.s
+.PHONY : src/Shader.cpp.s
+
+src/utils.o: src/utils.cpp.o
+.PHONY : src/utils.o
+
+# target to build an object file
+src/utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/utils.cpp.o
+.PHONY : src/utils.cpp.o
+
+src/utils.i: src/utils.cpp.i
+.PHONY : src/utils.i
+
+# target to preprocess a source file
+src/utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/utils.cpp.i
+.PHONY : src/utils.cpp.i
+
+src/utils.s: src/utils.cpp.s
+.PHONY : src/utils.s
+
+# target to generate assembly for a file
+src/utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/src/utils.cpp.s
+.PHONY : src/utils.cpp.s
 
 # Help Target
 help:
@@ -165,9 +306,27 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gravity_sim"
-	@echo "... gravity_sim.o"
-	@echo "... gravity_sim.i"
-	@echo "... gravity_sim.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... src/Camera.o"
+	@echo "... src/Camera.i"
+	@echo "... src/Camera.s"
+	@echo "... src/GravitySimulation.o"
+	@echo "... src/GravitySimulation.i"
+	@echo "... src/GravitySimulation.s"
+	@echo "... src/Grid.o"
+	@echo "... src/Grid.i"
+	@echo "... src/Grid.s"
+	@echo "... src/Object.o"
+	@echo "... src/Object.i"
+	@echo "... src/Object.s"
+	@echo "... src/Shader.o"
+	@echo "... src/Shader.i"
+	@echo "... src/Shader.s"
+	@echo "... src/utils.o"
+	@echo "... src/utils.i"
+	@echo "... src/utils.s"
 .PHONY : help
 
 

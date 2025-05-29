@@ -2,8 +2,14 @@ gravity_sim: \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/Scrt1.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/crti.o \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o \
-  CMakeFiles/gravity_sim.dir/gravity_sim.cpp.o \
-  /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libglfw.so \
+  CMakeFiles/gravity_sim.dir/main.cpp.o \
+  CMakeFiles/gravity_sim.dir/src/utils.cpp.o \
+  CMakeFiles/gravity_sim.dir/src/Shader.cpp.o \
+  CMakeFiles/gravity_sim.dir/src/Camera.cpp.o \
+  CMakeFiles/gravity_sim.dir/src/Object.cpp.o \
+  CMakeFiles/gravity_sim.dir/src/Grid.cpp.o \
+  CMakeFiles/gravity_sim.dir/src/GravitySimulation.cpp.o \
+  /usr/lib/libglfw.so.3.4 \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libGLEW.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libGL.so \
   /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libX11.so \
@@ -55,9 +61,21 @@ gravity_sim: \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/crtbeginS.o:
 
-CMakeFiles/gravity_sim.dir/gravity_sim.cpp.o:
+CMakeFiles/gravity_sim.dir/main.cpp.o:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libglfw.so:
+CMakeFiles/gravity_sim.dir/src/utils.cpp.o:
+
+CMakeFiles/gravity_sim.dir/src/Shader.cpp.o:
+
+CMakeFiles/gravity_sim.dir/src/Camera.cpp.o:
+
+CMakeFiles/gravity_sim.dir/src/Object.cpp.o:
+
+CMakeFiles/gravity_sim.dir/src/Grid.cpp.o:
+
+CMakeFiles/gravity_sim.dir/src/GravitySimulation.cpp.o:
+
+/usr/lib/libglfw.so.3.4:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/15.1.1/../../../../lib/libGLEW.so:
 

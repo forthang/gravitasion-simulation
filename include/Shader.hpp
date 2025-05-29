@@ -2,8 +2,8 @@
 #define SHADER_HPP
 
 #include <GL/glew.h>
-#include <string>
 #include <glm/glm.hpp>
+#include <string>
 
 class Shader {
 public:
@@ -12,8 +12,12 @@ public:
     Shader(const char* vertexSource, const char* fragmentSource);
     ~Shader();
 
-    void use() const;
+    Shader(const Shader&) = delete;
+    Shader& operator=(const Shader&) = delete;
+    Shader(Shader&&) = delete;
+    Shader& operator=(Shader&&) = delete;
 
+    void use() const;
     void setBool(const std::string& name, bool value) const;
     void setInt(const std::string& name, int value) const;
     void setFloat(const std::string& name, float value) const;
@@ -27,4 +31,4 @@ private:
     void checkCompileErrors(GLuint shader, std::string type);
 };
 
-#endif 
+#endif

@@ -8,7 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/forthang/work/oop_course/gravity_sim.cpp" "CMakeFiles/gravity_sim.dir/gravity_sim.cpp.o" "gcc" "CMakeFiles/gravity_sim.dir/gravity_sim.cpp.o.d"
+  "/home/forthang/work/oop_course/main.cpp" "CMakeFiles/gravity_sim.dir/main.cpp.o" "gcc" "CMakeFiles/gravity_sim.dir/main.cpp.o.d"
+  "/home/forthang/work/oop_course/src/Camera.cpp" "CMakeFiles/gravity_sim.dir/src/Camera.cpp.o" "gcc" "CMakeFiles/gravity_sim.dir/src/Camera.cpp.o.d"
+  "/home/forthang/work/oop_course/src/GravitySimulation.cpp" "CMakeFiles/gravity_sim.dir/src/GravitySimulation.cpp.o" "gcc" "CMakeFiles/gravity_sim.dir/src/GravitySimulation.cpp.o.d"
+  "/home/forthang/work/oop_course/src/Grid.cpp" "CMakeFiles/gravity_sim.dir/src/Grid.cpp.o" "gcc" "CMakeFiles/gravity_sim.dir/src/Grid.cpp.o.d"
+  "/home/forthang/work/oop_course/src/Object.cpp" "CMakeFiles/gravity_sim.dir/src/Object.cpp.o" "gcc" "CMakeFiles/gravity_sim.dir/src/Object.cpp.o.d"
+  "/home/forthang/work/oop_course/src/Shader.cpp" "CMakeFiles/gravity_sim.dir/src/Shader.cpp.o" "gcc" "CMakeFiles/gravity_sim.dir/src/Shader.cpp.o.d"
+  "/home/forthang/work/oop_course/src/utils.cpp" "CMakeFiles/gravity_sim.dir/src/utils.cpp.o" "gcc" "CMakeFiles/gravity_sim.dir/src/utils.cpp.o.d"
   "" "gravity_sim" "gcc" "CMakeFiles/gravity_sim.dir/link.d"
   )
 
