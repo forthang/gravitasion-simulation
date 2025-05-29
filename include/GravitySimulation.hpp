@@ -35,7 +35,7 @@ public:
 
 
 private:
-    Shader* mainShader = nullptr; // Owned pointer, requires delete
+    Shader* mainShader = nullptr; 
     Camera camera;
     std::vector<Object> objects;
     Grid grid; 
@@ -44,7 +44,7 @@ private:
     float deltaTime = 0.0f;
     float lastFrame = 0.0f;
 
-    float lastMouseX = 400.0f, lastMouseY = 300.0f; // screen center
+    float lastMouseX = 400.0f, lastMouseY = 300.0f; 
     bool firstMouse = true;
 
     bool isCreatingObject = false;

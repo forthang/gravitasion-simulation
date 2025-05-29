@@ -31,7 +31,7 @@ public:
 
     ~Object();
 
-    // Rule of Five: Object manages OpenGL resources (VAO, VBO)
+   
     Object(const Object& other);
     Object& operator=(const Object& other);
     Object(Object&& other) noexcept;

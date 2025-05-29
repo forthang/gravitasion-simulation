@@ -24,7 +24,7 @@ public:
     Grid(Grid&&) = delete;
     Grid& operator=(Grid&&) = delete;
 
-    void setupOpenGLResources(); // Call after GL context is ready
+    void setupOpenGLResources(); 
     void updateAndWarp(const std::vector<Object>& objects);
     void draw(Shader& shader);
 

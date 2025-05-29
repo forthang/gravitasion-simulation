@@ -54,7 +54,7 @@ Object& Object::operator=(const Object& other) {
 }
 
 Object::Object(Object&& other) noexcept
-    : VAO(other.VAO), VBO(other.VBO), // Pilfer GL resources
+    : VAO(other.VAO), VBO(other.VBO), 
       position(std::move(other.position)), velocity(std::move(other.velocity)),
       vertexCount(other.vertexCount), color(std::move(other.color)), 
       Initializing(other.Initializing), Launched(other.Launched),

@@ -230,7 +230,7 @@ void GravitySimulation::update() {
                 glm::vec3 diff = objects[j].position - objects[i].position;
                 float distance_visual = glm::length(diff);
 
-                if (distance_visual > 0.001f) { // Avoid division by zero / extreme forces
+                if (distance_visual > 0.001f) { 
                     glm::vec3 direction = glm::normalize(diff);
  
                     float dist_m = distance_visual * 1000.0f; 

@@ -66,34 +66,29 @@ void Grid::updateAndWarp(const std::vector<Object>& objects) {
 
     float verticalShiftFactor = comY - initialYPlane;
 
-    for (size_t i = 0; i < vertices.size(); i += 3) { // Iterate by vertex (x,y,z)
-        // vertices[i] = X, vertices[i+1] = Y, vertices[i+2] = Z
-        // Original X and Z of the grid vertex define its position for warping.
-        // The Y component (vertices[i+1]) is what gets modified.
-        glm::vec3 vertexBasePos(vertices[i], initialYPlane, vertices[i + 2]); // Use initialY for warping calc base
+    for (size_t i = 0; i < vertices.size(); i += 3) { 
+
+        glm::vec3 vertexBasePos(vertices[i], initialYPlane, vertices[i + 2]); /
         float totalDisplacementY = 0.0f;
 
         for (const auto& obj : objects) {
-            if (obj.mass <= 0 || obj.radius <=0) continue; // Игнор сетки
+            if (obj.mass <= 0 || obj.radius <=0) continue; 
 
             glm::vec3 toObject = obj.position - vertexBasePos;
-            glm::vec3 toObjectXZ = glm::vec3(toObject.x, 0.0f, toObject.z); // Projection onto XZ plane
+            glm::vec3 toObjectXZ = glm::vec3(toObject.x, 0.0f, toObject.z);
             float distanceXZ = glm::length(toObjectXZ);
-            if (distanceXZ < 1.0f) distanceXZ = 1.0f; // Clamp to avoid division by zero (visual units)
+            if (distanceXZ < 1.0f) distanceXZ = 1.0f; 
 
             float distanceXZ_m = distanceXZ * 1000.0f; 
-            float rs = (2.0f * static_cast<float>(Constants::G) * obj.mass) / (Constants::C * Constants::C); // Schwarzschild radius
+            float rs = (2.0f * static_cast<float>(Constants::G) * obj.mass) / (Constants::C * Constants::C); =
 
-            if (distanceXZ_m > rs) { // Apply warp only outside (conceptual) Schwarzschild radius
-                // Original formula:
+            if (distanceXZ_m > rs) { 
                 float warpFactor = (obj.mass / Constants::DEFAULT_INIT_MASS) * obj.radius * 100000.0f;
-                // obj.radius is visual radius. Multiplying by 100000.0f is a large scaling factor.
-                // This "warpFactor" determines the amplitude of the displacement.
-                // The displacement is then proportional to (rs / distanceXZ_m).
+
                 totalDisplacementY -= warpFactor * (rs / distanceXZ_m);
-            } // какашки 
+            } =
         }
-        // Apply calculated displacement and the overall vertical shift
+
         vertices[i + 1] = initialYPlane + totalDisplacementY - std::abs(verticalShiftFactor * 0.1f);
     }
 
