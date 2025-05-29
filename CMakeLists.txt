@@ -31,7 +31,7 @@ endif()
 
 # Основной исполняемый файл
 add_executable(gravity_sim
-    gravity_sim_3Dgrid.cpp
+    gravity_sim.cpp
 )
 
 # # Подключаем директории

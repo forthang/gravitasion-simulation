@@ -60,10 +60,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/forthang/work/gravity_sim-main
+CMAKE_SOURCE_DIR = /home/forthang/work/oop_course
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/forthang/work/gravity_sim-main/build
+CMAKE_BINARY_DIR = /home/forthang/work/oop_course/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -90,9 +90,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/forthang/work/gravity_sim-main/build/CMakeFiles /home/forthang/work/gravity_sim-main/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/forthang/work/oop_course/build/CMakeFiles /home/forthang/work/oop_course/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/forthang/work/gravity_sim-main/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/forthang/work/oop_course/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -132,29 +132,29 @@ gravity_sim/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/build
 .PHONY : gravity_sim/fast
 
-gravity_sim_3Dgrid.o: gravity_sim_3Dgrid.cpp.o
-.PHONY : gravity_sim_3Dgrid.o
+gravity_sim.o: gravity_sim.cpp.o
+.PHONY : gravity_sim.o
 
 # target to build an object file
-gravity_sim_3Dgrid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/gravity_sim_3Dgrid.cpp.o
-.PHONY : gravity_sim_3Dgrid.cpp.o
+gravity_sim.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/gravity_sim.cpp.o
+.PHONY : gravity_sim.cpp.o
 
-gravity_sim_3Dgrid.i: gravity_sim_3Dgrid.cpp.i
-.PHONY : gravity_sim_3Dgrid.i
+gravity_sim.i: gravity_sim.cpp.i
+.PHONY : gravity_sim.i
 
 # target to preprocess a source file
-gravity_sim_3Dgrid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/gravity_sim_3Dgrid.cpp.i
-.PHONY : gravity_sim_3Dgrid.cpp.i
+gravity_sim.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/gravity_sim.cpp.i
+.PHONY : gravity_sim.cpp.i
 
-gravity_sim_3Dgrid.s: gravity_sim_3Dgrid.cpp.s
-.PHONY : gravity_sim_3Dgrid.s
+gravity_sim.s: gravity_sim.cpp.s
+.PHONY : gravity_sim.s
 
 # target to generate assembly for a file
-gravity_sim_3Dgrid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/gravity_sim_3Dgrid.cpp.s
-.PHONY : gravity_sim_3Dgrid.cpp.s
+gravity_sim.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gravity_sim.dir/build.make CMakeFiles/gravity_sim.dir/gravity_sim.cpp.s
+.PHONY : gravity_sim.cpp.s
 
 # Help Target
 help:
@@ -165,9 +165,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... gravity_sim"
-	@echo "... gravity_sim_3Dgrid.o"
-	@echo "... gravity_sim_3Dgrid.i"
-	@echo "... gravity_sim_3Dgrid.s"
+	@echo "... gravity_sim.o"
+	@echo "... gravity_sim.i"
+	@echo "... gravity_sim.s"
 .PHONY : help
 
 

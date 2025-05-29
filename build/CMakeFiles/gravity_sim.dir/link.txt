@@ -1,1 +1,1 @@
-/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/gravity_sim.dir/link.d CMakeFiles/gravity_sim.dir/gravity_sim_3Dgrid.cpp.o -o gravity_sim  -lglfw -lGLEW -lGL -lX11 -lpthread -ldl -lm
+/usr/bin/c++ -Wl,--dependency-file=CMakeFiles/gravity_sim.dir/link.d CMakeFiles/gravity_sim.dir/gravity_sim.cpp.o -o gravity_sim  -lglfw -lGLEW -lGL -lX11 -lpthread -ldl -lm

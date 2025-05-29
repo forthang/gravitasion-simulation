@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/forthang/work/gravity_sim-main/build/cmake_install.cmake"
+		"/home/forthang/work/oop_course/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }
