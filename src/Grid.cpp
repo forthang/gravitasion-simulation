@@ -68,7 +68,7 @@ void Grid::updateAndWarp(const std::vector<Object>& objects) {
 
     for (size_t i = 0; i < vertices.size(); i += 3) { 
 
-        glm::vec3 vertexBasePos(vertices[i], initialYPlane, vertices[i + 2]); /
+        glm::vec3 vertexBasePos(vertices[i], initialYPlane, vertices[i + 2]); 
         float totalDisplacementY = 0.0f;
 
         for (const auto& obj : objects) {
@@ -80,13 +80,13 @@ void Grid::updateAndWarp(const std::vector<Object>& objects) {
             if (distanceXZ < 1.0f) distanceXZ = 1.0f; 
 
             float distanceXZ_m = distanceXZ * 1000.0f; 
-            float rs = (2.0f * static_cast<float>(Constants::G) * obj.mass) / (Constants::C * Constants::C); =
+            float rs = (2.0f * static_cast<float>(Constants::G) * obj.mass) / (Constants::C * Constants::C); 
 
             if (distanceXZ_m > rs) { 
                 float warpFactor = (obj.mass / Constants::DEFAULT_INIT_MASS) * obj.radius * 100000.0f;
 
                 totalDisplacementY -= warpFactor * (rs / distanceXZ_m);
-            } =
+            } 
         }
 
         vertices[i + 1] = initialYPlane + totalDisplacementY - std::abs(verticalShiftFactor * 0.1f);
